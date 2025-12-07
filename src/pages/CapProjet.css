@@ -23,17 +23,17 @@
   margin-top: 40px;
   display: grid;
   gap: 40px;
-  justify-content: center;   /* ⭐ C'est ICI ⭐ */
+  justify-content: center;   
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 
-/* Cadre smartphone */
+
 .phone-frame {
-  width: 260px;                 /* largeur fixe smartphone */
-  height: 520px;                /* hauteur fixe smartphone */
+  width: 260px;                
+  height: 520px;                
   background: #000;
-  border-radius: 35px;          /* arrondi pour effet téléphone */
+  border-radius: 35px;          
   padding: 18px;
   display: flex;
   justify-content: center;
@@ -44,29 +44,27 @@
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* Effet hover moderne */
+
 .phone-frame:hover {
   transform: scale(1.05);
   box-shadow: 0 18px 40px rgba(0,0,0,0.35);
 }
 
-/* Image interne */
+
 .gallery-img {
   width: 100%;
   height: 100%;
   border-radius: 24px;
-  object-fit: cover;            /* remplissage propre */
+  object-fit: cover;            
 }
 
 
 
-/* Effet moderne au survol */
 .gallery-img:hover {
   transform: scale(1.05);
   box-shadow: 0 12px 26px rgba(0,0,0,0.25);
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .gallery-img {
     max-width: 100%;

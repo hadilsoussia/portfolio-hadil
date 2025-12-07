@@ -1,6 +1,8 @@
 import "./CV.css";
 
 export default function CV() {
+  const baseUrl = import.meta.env.BASE_URL; 
+
   return (
     <div className="cv-page">
       <h2>Mon CV</h2>
@@ -9,9 +11,9 @@ export default function CV() {
       <div className="cv-container">
         <div className="cv-image-wrapper">
           <img
-            src="/cv.png"
+            src={`${baseUrl}cv.png`}
             alt="CV Hadil Ben Soussia"
-            className="cv-image" // Nom de classe corrigé pour correspondre au CSS
+            className="cv-image" 
           />
         </div>
       </div>

@@ -1,6 +1,8 @@
 import "./CapProjet.css";
 
 export default function CapProjet() {
+  const baseUrl = import.meta.env.BASE_URL; 
+
   return (
     <div className="project-page">
       <h2>Application mobile de prévention — Cap Projet</h2>
@@ -14,18 +16,18 @@ export default function CapProjet() {
       <h3 className="section-title">Galerie des maquettes</h3>
 
       <div className="gallery">
-
-  {["cap1.png", "cap2.png", "cap3.png", "cap4.png", "cap5.png", 
-    "cap6.png", "cap7.png", "cap8.png", "cap9.png"].map((img, index) => (
-    
-    <div className="phone-frame fade-in" key={index}>
-      <img src={`/${img}`} alt={`Maquette ${index + 1}`} className="gallery-img" />
-    </div>
-
-  ))}
-
-</div>
-
+        {["cap1.png", "cap2.png", "cap3.png", "cap4.png", "cap5.png", 
+          "cap6.png", "cap7.png", "cap8.png", "cap9.png"].map((img, index) => (
+          
+          <div className="phone-frame fade-in" key={index}>
+            <img 
+              src={`${baseUrl}${img}`} 
+              alt={`Maquette ${index + 1}`} 
+              className="gallery-img" 
+            />
+          </div>
+        ))}
+      </div>
 
       <h3 className="section-title">Objectif</h3>
       <p>

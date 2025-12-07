@@ -2,6 +2,8 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 
 export default function Home() {
+  const baseUrl = import.meta.env.BASE_URL; 
+
   return (
     <div className="home">
       {/* Hero Section avec photo */}
@@ -10,7 +12,7 @@ export default function Home() {
           {/* Photo de profil */}
           <div className="profile-photo">
             <img 
-              src="/profil.jpg" 
+              src={`${baseUrl}profil.jpg`} 
               alt="Hadil Ben Soussia - Ingénieure en IA et Data Science"
               className="profile-img"
             />
@@ -45,7 +47,7 @@ export default function Home() {
         </p>
         <p className="stage-info">
           <strong>🎯 Stage recherché :</strong> 4 mois en IA/Big Data<br/>
-          <strong>📅 Début :</strong> Avril 2025<br/>
+          <strong>📅 Début :</strong> Avril 2026<br/>
           <strong>✨ Objectif :</strong> Contribuer à des projets innovants à fort impact
         </p>
       </section>

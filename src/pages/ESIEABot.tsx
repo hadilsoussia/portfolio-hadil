@@ -1,9 +1,15 @@
 export default function ESIEABot() {
+  const baseUrl = import.meta.env.BASE_URL; 
+
   return (
     <div className="project-page">
       <h2>Robot pédagogique ESIEABot</h2>
 
-      <img src="/robot.jpg" className="project-img fade-in" alt="ESIEABot" />
+      <img 
+        src={`${baseUrl}robot.jpg`} 
+        className="project-img fade-in" 
+        alt="ESIEABot" 
+      />
 
       <h3>Contexte</h3>
       <p>

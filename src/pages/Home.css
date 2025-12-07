@@ -1,6 +1,4 @@
-/* ==================== */
-/*      HERO SECTION    */
-/* ==================== */
+
 .home {
   width: 80%;
   margin: auto;
@@ -17,7 +15,6 @@
   margin-bottom: 40px;
 }
 
-/* Photo de profil */
 .profile-photo {
   flex-shrink: 0;
 }
@@ -37,7 +34,7 @@
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
-/* Texte hero */
+
 .hero-text {
   flex: 1;
 }
@@ -67,7 +64,7 @@
   border-left: 3px solid #2b4eff;
 }
 
-/* Boutons */
+
 .hero-buttons {
   display: flex;
   gap: 20px;
@@ -107,9 +104,7 @@
   transform: translateY(-2px);
 }
 
-/* ==================== */
-/*    ABOUT SECTION     */
-/* ==================== */
+
 .about {
   background: white;
   padding: 40px;
@@ -146,9 +141,7 @@
   color: #2b4eff;
 }
 
-/* ==================== */
-/*     RESPONSIVE       */
-/* ==================== */
+
 @media (max-width: 900px) {
   .home {
     width: 90%;
